@@ -1,2 +1,2 @@
 # freegames.github.io
-Free Games to Play!
+Lots of free flash games to play!
