@@ -1,25 +1,42 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
-		<title></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-		<script type="text/javascript">
-			var flashvars = {};
-			var params = {};
-			var attributes = {};
-					
-			
-			params.bgcolor="#FFFFFF"; 
-			
-			attributes.name = "";
-			attributes.styleclass = "";
-			attributes.align = "";			
-			swfobject.embedSWF("troubletank2.swf", "flashContent", "1348", "639", "15.0.0", "expressInstall.swf", flashvars, params, attributes);
-		</script>
-	</head>
-	<body>
-		<div id="flashContent">
-			Get <a href="http://www.adobe.com/go/getflash">Adobe Flash Player</a>. Embedded with the help of <a href="http://embed-swf.org">embed-swf.org</a>.
-		</div>
-	</body>
+<html>
+  <head>
+    <script type="text/javascript">
+      function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }  
+  } else {  
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }  
+  }  
+}
+    </script>
+  </head>
+    <body>
+    <object>
+      <input type="button" value="Fullscreen" onclick="toggleFullScreen(); return change(this);" />
+
+<script type="text/javascript">
+function change( el )
+{
+    if ( el.value === "Fullscreen" )
+        el.value = "Exit Fullcreen";
+    else
+        el.value = "Fullscreen";
+}
+</script>
+  <embed src="tanktrouble2.swf" play="false" loop="1" quality="high" pluginspage=" http://www.Adobe.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="1348" height="614">
+</object>
+  </body>
 </html>
