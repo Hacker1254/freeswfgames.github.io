@@ -50,7 +50,7 @@ var template = '\
 <body class="tp-dync2"> \
 \
 <header class="tp-dync" align="center" style="background-color:#77ffff; font-family: serif; width:100%;"> \
-	<h1>WiiGeckoCodes</h1> \
+	<h1>FreeSwfGames</h1> \
 	"Coding Games..." \
 </header> \
  \
