@@ -63,7 +63,8 @@ var template = '\
 	<h4>News</h4> \
 	--- More Games to Come;) ---<br> \
 \
-	<h4>Clicks</h4><iframe src="/counter.html" seamless="seamless" frameborder="0" style="width:125px; height:56px;"></iframe> \
+	<h4>Clicks</h4><iframe src="/counter.html" seamless="seamless" frameborder="0" style="width:125px; height:56px;"></iframe><br><br> \
+	<h4>Your iP</h4><iframe src="/ipfinder.html" seamless="seamless" framborder="0" style="width:125px; height:56px;></iframe><br><br> \
 </aside> \
 \
 <section class="tp-dync2"><br> \
