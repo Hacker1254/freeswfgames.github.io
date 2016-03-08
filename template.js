@@ -58,6 +58,7 @@ var template = '\
 <nav class="tp-dync"><br> \
 	<a href="http://freeswfgames.github.io/email.html">Something No Working? Tell Me Here!</a><br><br> \
 	<a href="http://freeswfgames.github.io/cheats/cheats.html">Cheats Page</a><br><br> \
+	<a href="http://freeswfgames.github.io/newsletter.html">Subscribe to Newsletter</a><br><br> \
 	</nav> \
 <aside class="tp-dync"> \
 	<h4>News</h4> \
