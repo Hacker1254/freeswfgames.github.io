@@ -43,6 +43,7 @@ $(document).ready(function()
 	// Set the date and time
 	var d_names = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 	var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+	var date_format = '12';
 	var d = new Date();
 	var curr_day = d.getDay();
 	var curr_date = d.getDate();
@@ -50,8 +51,37 @@ $(document).ready(function()
 	var curr_year = d.getFullYear();
 	var curr_hour = d.getHours();
 	var curr_min = d.getMinutes();
-	
+	var result  = h;
+                        var ext     = '';
+                        if(date_format == '12'){
+                            if(h > 12){
+                                h = (h - 12);
+                                if(h < 10){
+                                    result = "0" + h;
+                                }
+
+                            }
+                        }
+                        if(m < 10){
+                            m = "" + m;
+                        }
+                        result = result + ":" + m;
+                        console.log(result);
+                        m=checkTime(m);
 	$("#datepicker").replaceWith("<p class=\"date\">" + d_names[curr_day] + ", " + m_names[curr_month] + " " + curr_date + "</p>");
+	t=setTimeout('startTime()',1);
+}
+                    function checkTime(i){
+                        if (i<10){
+                            i="0" + i;
+                        }
+                        return i;
+                    }
+                </script>
+                <body onload="startTime()">
+                    <div id="txt"> 
+                    </div>
+                </body>
 	
 	// Adding a "0" when hours / minutes is only one character
 	if(curr_hour < 10)
