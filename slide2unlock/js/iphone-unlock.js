@@ -36,13 +36,14 @@ $(document).ready(function()
 			$("#unlock-bottom").animate({bottom: -100}, 300);
 			$("#unlock-top").animate({top: -100}, 300, '', function()
 			{});	
-			$("#iphone-inside").fadeOut("normal", function(){window.location="index.html";});								  
+			$("#iphone-inside").fadeOut("normal", function(){window.location="index1.html";});								  
 		//});
 	}
 	
 	// Set the date and time
 	var d_names = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 	var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+	var date_format = '12';
 	var d = new Date();
 	var curr_day = d.getDay();
 	var curr_date = d.getDate();
@@ -51,6 +52,15 @@ $(document).ready(function()
 	var curr_hour = d.getHours();
 	var curr_min = d.getMinutes();
 	
+	var result  = curr_hour;
+                        var ext     = '';
+                        if(date_format == '12'){
+                            if(curr_hour > 12){
+                                ext = '';
+                                curr_hour = (curr_hour - 12);
+                                if(curr_hour < 10){
+                                    result = "0" + curr_hour;
+                                }
 	$("#datepicker").replaceWith("<p class=\"date\">" + d_names[curr_day] + ", " + m_names[curr_month] + " " + curr_date + "</p>");
 	
 	// Adding a "0" when hours / minutes is only one character
