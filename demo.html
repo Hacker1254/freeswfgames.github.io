@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html ng-app="appetizeApp" class="no-js">
+<head>
+	<base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-bind="pageTitle"></title>
+    <meta name="description" content="{{pageDescription}}"/>
+    <meta name="author" content="Appetize.io"/>
+    <meta name="theme-color" content="#222222"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="apple-touch-icon" href="/images/logo1_colored_background_padded_extra.png"/>
+    <meta property="og:site_name" content="Appetize.io" />
+    <meta property="og:description" content="Online web based iOS Simulators and Android Emulators. Stream mobile apps in the browser with html5 and javascript." />
+    <meta property="og:image" content="https://appetize.io/images/logo1_colored_transparent.png" />
+    <meta property="og:title" content="Appetize.io" />
+    <meta property="og:type" content="website"/>
+    <meta name="robots" content="all" />
+
+    <link rel="canonical" ng-href="{{pageCanonical}}"/>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="lib.f6efc1ec.css">
+
+    <style type="text/css">
+    [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
+    </style>
+
+    <link rel="stylesheet" href="application.2842f677.css">
+
+    <meta name="fragment" content="!">
+</head>
+<body class="not-iframe" ng-controller="UserCtrl">
+    <div class="page-container">
+        <div class="header" ng-controller="NavbarCtrl">
+            <nav class="navbar navbar-default" role="navigation">
+                <div style="display:block; min-height: 50px;">
+                    <a href="/" style="color: transparent;">
+                        <img width="30" src="/images/logo1_colored_tight_sm.png"/>
+                        <span class="branding" style="font-size: 20px;display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; color: white;">Appetize.io</span>
+                    </a>
+                    <span class="menu-full" style="float: right;">
+                        <span ng-hide="loggedIn" ng-cloak>
+                            <a class="btn btn-default" href="/demo">DEMO</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/upload">UPLOAD</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/pricing">PRICING</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/docs">DOCS</a>
+                            <a style="margin-left: 10px;" class="btn btn-default btn-auth" href="/login">SIGN IN</a>
+                        </span>
+                        <span ng-show="loggedIn" ng-cloak>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/upload">UPLOAD</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/docs">DOCS</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/dashboard">DASHBOARD</a>
+                            <a style="margin-left: 10px;" class="btn btn-default" href="/account">ACCOUNT</a>
+                            <a style="margin-left: 10px;" class="btn btn-default btn-auth" ng-click="logout()" href="/logout">LOGOUT</a>
+                        </span>
+                    </span>
+                    <span class="menu-narrow" style="float: right; display: none;">
+
+                        <button type="button" class="navbar-toggle" style="margin: 0px;" ng-click="collapsed=!collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+
+                    </span>
+                    <span class="menu-narrow" style="float: right; display: none; clear: both; padding-top: 20px;">
+                        <div collapse="!collapsed" >
+                             <ul class="mobileNavList" >
+                                <span ng-hide="loggedIn" ng-cloak>
+                                    <li><a class="btn btn-default" href="/demo">DEMO</a></li>
+                                    <li><a class="btn btn-default" href="/upload">UPLOAD</a></li>
+                                    <li><a class="btn btn-default" href="/pricing">PRICING</a></li>
+                                    <li><a class="btn btn-default" href="/docs">DOCS</a></li>
+                                    <li><a class="btn btn-default btn-auth" href="/login">SIGN IN</a></li>
+                                </span>
+                                <span ng-show="loggedIn" ng-cloak>
+                                    <li><a class="btn btn-default" href="/upload">UPLOAD</a></li>
+                                    <li><a class="btn btn-default" href="/docs">DOCS</a></li>
+                                    <li><a class="btn btn-default" href="/dashboard">DASHBOARD</a></li>
+                                    <li><a class="btn btn-default" href="/account">ACCOUNT</a></li>
+                                    <li><a class="btn btn-default btn-auth" href="/logout" ng-click="logout()">LOGOUT</a></li>
+                                </span>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </nav>
+        </div>
+
+
+    	<div class="main" ng-cloak ng-view="">
+            <div ng-controller="AnalyticsCtrl"></div>
+        </div>
+
+
+        <div class="footer" >
+            <a target="_blank" href="https://twitter.com/appetizeio"><i class="fa fa-twitter"></i> Follow Us</a>
+            <a href="mailto:hello@appetize.io">Contact Us</a>
+        </div>
+    </div>
+
+    <!--[if lt IE 9]>
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+        <script src="lib.f1e6eb57.js"></script>
+        
+        <script src="bower_components/jscolor/jscolor.js"></script>  
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+
+
+        <script src="application.86a28811.js"></script>
+
+        <!-- begin GONATIVE code -->
+        <script>
+        $( document ).ready(function(){
+            function is_touch_device() {
+              return 'ontouchstart' in window // works on most browsers 
+                  || 'onmsgesturechange' in window; // works on ie10
+            };
+            if(is_touch_device()){
+                $('body').addClass('touch');
+            }
+            else{
+                $('body').addClass('notouch');
+            }
+
+        });
+        </script>
+        <!-- end GONATIVE code -->
+
+        <!-- begin GOOGLEANALYTICS code -->
+        <script>
+            var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-36826808-5"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+                // _gaq.push(["_trackPageview"]);
+            </script>
+        <!--end GOOGLEANALYTICS code -->
+
+        <!-- start Mixpanel -->
+        <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+            for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+                mixpanel.init("15b3664972218c3fdad3428bc7b8fe09");</script>
+            <!-- end Mixpanel -->
+
+
+
+        <!-- begin PRERENDER code -->
+        <script>
+        window.prerenderReady = false;
+        function setReady(){
+            window.prerenderReady = true;
+        }
+        setTimeout(setReady, 5000);
+        </script>
+        <!-- end PRERENDER code -->
+
+
+        <!-- begin IE code -->
+        <script>
+        window.console = window.console || {};
+        window.console.log = window.console.log || function() {};
+        </script>
+        <!-- end IE code -->
+        
+        <div style="display: none;" ng-cloak preload-resource="false"></div>
+</body>
+</html>
