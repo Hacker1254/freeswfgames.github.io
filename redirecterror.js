@@ -1,2 +1,8 @@
 //similar behavior as an HTTP redirect
-window.location.replace("http://stackoverflow.com");
+var RedirectError = true;
+
+if (RedirectError) {
+  window.location.replace("http://freeswfgames.github.io/redirecterror.html");
+} else {
+  window.location.replace("http://freeswfgames.github.io");
+}
