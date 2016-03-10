@@ -36,7 +36,7 @@ $(document).ready(function()
 			$("#unlock-bottom").animate({bottom: -100}, 300);
 			$("#unlock-top").animate({top: -100}, 300, '', function()
 			{});	
-			$("#iphone-inside").fadeOut("normal", function(){window.location="index.html";});								  
+			$("#iphone-inside").fadeOut("normal", function(){window.location="index1.html";});								  
 		//});
 	}
 	
