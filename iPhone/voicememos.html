@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>iPhone Simulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">var showSB = false;</script>
+</head>
+
+<body onload="Show('VoiceMemos')">
+
+
+<div id="iPhone">
+<div id="Screen">
+
+</div>
+</div>
+
+<div id="sleep_button" onclick="window.location='../index.html'"></div>
+<div id="home_button" onclick="window.location='../home.html'"></div>
+
+
+
+
+<!-- ************************************* -->
+<!-- ***** THE INVISIBLE SCREENS!!! *****  -->
+<!-- ************************************* -->
+
+
+<div style="display:none;">
+
+<!-- ************************************* -->
+<!-- VoiceMemos -->
+<!-- ************************************* -->
+  <div id="VoiceMemos">
+	<img src="images/VoiceMemos/VoiceMemos.png" alt="" />
+	<div style="position:absolute; height:45px; width:45px; top:530px; left:55px;" onclick="Show('Recording');"></div>
+	<div style="position:absolute; height:45px; width:45px; top:530px; left:297px;" onclick="Show('ListMemos');"></div>
+  </div>
+  
+<!-- ************************************* -->
+<!-- Recording -->
+<!-- ************************************* -->
+  <div id="Recording">
+	<img src="images/VoiceMemos/Recording.png" alt="" />
+	<div style="position:absolute; height:45px; width:45px; top:530px; left:55px;" onclick="Show('VoiceMemos');"></div>
+	<div style="position:absolute; height:45px; width:45px; top:530px; left:297px;" onclick="Show('VoiceMemos');"></div>
+  </div>
+  
+<!-- ************************************* -->
+<!-- ListMemos -->
+<!-- ************************************* -->
+  <div id="ListMemos">
+	<img src="images/VoiceMemos/ListMemos.png" alt="" />
+	<div style="position:absolute; height:25px; width:65px; top:148px; left:288px;" onclick="Show('VoiceMemos');"></div>
+	<div style="position:absolute; height:22px; width:25px; top:200px; left:325px;" onclick="Show('MemoInfo');"></div>
+	<div style="position:absolute; height:45px; width:125px; top:530px; left:62px;" onclick="Show('Share2');"></div>
+	<div style="position:absolute; height:45px; width:125px; top:530px; left:210px;" onclick="Show('Delete');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- Share2 -->
+<!-- ************************************* -->
+  <div id="Share2">
+	<img src="images/VoiceMemos/ShareMemo2.png" alt="" />
+	<div style="position:absolute; height:44px; width:275px; top:535px; left:60px;" onclick="Show('ListMemos');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- Share1 -->
+<!-- ************************************* -->
+  <div id="Share1">
+	<img src="images/VoiceMemos/ShareMemo1.png" alt="" />
+	<div style="position:absolute; height:44px; width:275px; top:535px; left:60px;" onclick="Show('MemoInfo');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- Delete -->
+<!-- ************************************* -->
+  <div id="Delete">
+	<img src="images/VoiceMemos/DeleteMemo.png" alt="" />
+	<div style="position:absolute; height:44px; width:275px; top:535px; left:60px;" onclick="Show('ListMemos');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- MemoInfo -->
+<!-- ************************************* -->
+  <div id="MemoInfo">
+	<img src="images/VoiceMemos/MemoInfo.png" alt="" />
+	<div style="position:absolute; height:26px; width:90px; top:148px; left:50px;" onclick="Show('ListMemos');"></div>
+	<div style="position:absolute; height:46px; width:142px; top:328px; left:50px;" onclick="Show('TrimMemo');"></div>
+	<div style="position:absolute; height:46px; width:142px; top:328px; left:205px;" onclick="Show('Share1');"></div>
+  </div>
+  
+<!-- ************************************* -->
+<!-- TrimMemo -->
+<!-- ************************************* -->
+  <div id="TrimMemo">
+	<img src="images/VoiceMemos/TrimMemo.png" alt="" />
+	<div style="position:absolute; height:44px; width:275px; top:535px; left:60px;" onclick="Show('MemoInfo');"></div>
+  </div>
+
+<!-- ************************************* -->
+</div>
+
+
+<script type="text/javascript">
+disableSelection(document.body);
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2893329-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

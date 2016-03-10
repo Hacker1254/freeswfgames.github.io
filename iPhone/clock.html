@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>iPhone Simulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">var showSB = false;</script>
+</head>
+
+<body onload="Show('Clocks')">
+
+
+<div id="iPhone">
+<div id="Screen">
+
+</div>
+</div>
+
+<div id="sleep_button" onclick="window.location='../index.html'"></div>
+<div id="home_button" onclick="window.location='../home.html'"></div>
+
+
+
+
+<!-- ************************************* -->
+<!-- ***** THE INVISIBLE SCREENS!!! *****  -->
+<!-- ************************************* -->
+
+
+<div style="display:none;">
+
+<!-- ************************************* -->
+<!-- Clocks -->
+<!-- ************************************* -->
+  <div id="Clocks">
+	<img src="images/Clock/Clock.png" alt="" />
+	<div style="position:absolute; height:30px; width:50px; top:145px; left:45px;" onclick="Show('EditClocks');"></div>
+	<div style="position:absolute; height:30px; width:35px; top:145px; left:320px;" onclick="Show('AddClock');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- EditClocks -->
+<!-- ************************************* -->
+  <div id="EditClocks">
+	<img src="images/Clock/EditClocks.png" alt="" />
+  <div style="position:absolute; height:30px; width:50px; top:145px; left:45px;" onclick="Show('Clocks');"></div>
+  <div style="position:absolute; height:30px; width:35px; top:145px; left:320px;" onclick="Show('AddClock');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- AddClock -->
+<!-- ************************************* -->
+  <div id="AddClock">
+	<img src="images/Clock/AddClock.png" alt="" />
+  <div style="position:absolute; height:30px; width:60px; top:175px; left:295px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:85px; width:300px; top:215px; left:45px;" onclick="Show('Clocks');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- Alarms -->
+<!-- ************************************* -->
+  <div id="Alarms">
+	<img src="images/Clock/Alarms.png" alt="" />
+	<div style="position:absolute; height:30px; width:50px; top:145px; left:45px;" onclick="Show('EditAlarms');"></div>
+	<div style="position:absolute; height:30px; width:35px; top:145px; left:320px;" onclick="Show('AddAlarm');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- EditAlarms -->
+<!-- ************************************* -->
+  <div id="EditAlarms">
+	<img src="images/Clock/EditAlarms.png" alt="" />
+  <div style="position:absolute; height:30px; width:50px; top:145px; left:45px;" onclick="Show('Alarms');"></div>
+  <div style="position:absolute; height:30px; width:35px; top:145px; left:320px;" onclick="Show('AddAlarm');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- AddAlarm -->
+<!-- ************************************* -->
+  <div id="AddAlarm">
+	<img src="images/Clock/AddAlarm.png" alt="" />
+  <div style="position:absolute; height:30px; width:60px; top:145px; left:45px;" onclick="Show('Alarms');"></div>
+  <div style="position:absolute; height:30px; width:50px; top:145px; left:305px;" onclick="Show('Alarms');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- Stopwatch -->
+<!-- ************************************* -->
+  <div id="Stopwatch">
+	<img src="images/Clock/Stopwatch.png" alt="" />
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:60px;" onclick="Show('StopwatchStarted');"></div>
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- StopwatchStarted -->
+<!-- ************************************* -->
+  <div id="StopwatchStarted">
+	<img src="images/Clock/StopwatchStarted.png" alt="" />
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:60px;" onclick="Show('StopwatchStopped');"></div>
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:210px;" onclick="Show('StopwatchLap');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- StopwatchStopped -->
+<!-- ************************************* -->
+  <div id="StopwatchStopped">
+	<img src="images/Clock/StopwatchStopped.png" alt="" />
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:60px;" onclick="Show('StopwatchStarted');"></div>
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- StopwatchLap -->
+<!-- ************************************* -->
+  <div id="StopwatchLap">
+	<img src="images/Clock/StopwatchLap.png" alt="" />
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:60px;" onclick="Show('StopwatchStopped');"></div>
+	<div style="position:absolute; height:55px; width:130px; top:280px; left:210px;" onclick="Show('StopwatchLap');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+<!-- ************************************* -->
+<!-- Timer -->
+<!-- ************************************* -->
+  <div id="Timer">
+	<img src="images/Clock/Timer.png" alt="" />
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:50px;" onclick="Show('Clocks');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:130px;" onclick="Show('Alarms');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:210px;" onclick="Show('Stopwatch');"></div>
+	<div style="position:absolute; height:42px; width:60px; top:555px; left:290px;" onclick="Show('Timer');"></div>
+  </div>
+<!-- ************************************* -->
+
+
+
+</div>
+
+
+<script type="text/javascript">
+disableSelection(document.body);
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2893329-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>iPhone Simulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">var showSB = false;</script>
+</head>
+
+<body onload="Show('Calculator')">
+
+
+<div id="iPhone">
+<div id="Screen">
+
+</div>
+</div>
+
+<div id="sleep_button" onclick="window.location='../index.html'"></div>
+<div id="home_button" onclick="window.location='../home.html'"></div>
+
+
+
+
+<!-- ************************************* -->
+<!-- ***** THE INVISIBLE SCREENS!!! *****  -->
+<!-- ************************************* -->
+
+
+<div style="display:none;">
+
+<!-- ************************************* -->
+<!-- Calculator -->
+<!-- ************************************* -->
+  <div id="Calculator">
+	<img src="images/Calculator/Calculator.png" alt="" />
+  </div>
+
+<!-- ************************************* -->
+<!-- SearchNotes -->
+<!-- ************************************* -->
+  <div id="SearchNotes">
+	<img src="images/Notes/SearchNotes.png" alt="" />
+	<div style="position:absolute; height:28px; width:54px; top:148px; left:300px;" onclick="Show('Notes');"></div>
+	<div style="position:absolute; height:45px; width:310px; top:190px; left:45px;" onclick="Show('ViewNote');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- ViewNote -->
+<!-- ************************************* -->
+  <div id="ViewNote">
+	<img src="images/Notes/ViewNote.png" alt="" />
+	<div style="position:absolute; height:28px; width:52px; top:147px; left:45px;" onclick="Show('Notes');"></div>
+	<div style="position:absolute; height:28px; width:32px; top:147px; left:322px;" onclick="Show('NewNote');"></div>
+	<div style="position:absolute; height:28px; width:30px; top:557px; left:150px;" onclick="Show('EmailNote');"></div>
+	<div style="position:absolute; height:28px; width:30px; top:557px; left:220px;" onclick="Show('DeleteNote');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- NewNote -->
+<!-- ************************************* -->
+  <div id="NewNote">
+	<img src="images/Notes/NewNote.png" alt="" />
+	<div style="position:absolute; height:28px; width:52px; top:147px; left:45px;" onclick="Show('Notes');"></div>
+	<div style="position:absolute; height:28px; width:48px; top:147px; left:305px;" onclick="Show('Notes');"></div>
+  </div>
+  
+<!-- ************************************* -->
+<!-- EmailNote -->
+<!-- ************************************* -->
+  <div id="EmailNote">
+	<img src="images/Notes/EmailNote.png" alt="" />
+	<div style="position:absolute; height:28px; width:58px; top:147px; left:45px;" onclick="Show('ViewNote');"></div>
+  </div>
+  
+<!-- ************************************* -->
+<!-- DeleteNote -->
+<!-- ************************************* -->
+  <div id="DeleteNote">
+	<img src="images/Notes/DeleteNote.png" alt="" />
+	<div style="position:absolute; height:45px; width:278px; top:535px; left:60px;" onclick="Show('ViewNote');"></div>
+  </div>
+
+<!-- ************************************* -->
+</div>
+
+
+<script type="text/javascript">
+disableSelection(document.body);
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2893329-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

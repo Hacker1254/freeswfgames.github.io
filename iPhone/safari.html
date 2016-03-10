@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>iPhone Simulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">var showSB = false;</script>
+</head>
+
+<body onload="Show('Safari')">
+
+
+<div id="iPhone">
+<div id="Screen">
+
+</div>
+</div>
+
+<div id="sleep_button" onclick="window.location='../index.html'"></div>
+<div id="home_button" onclick="window.location='../home.html'"></div>
+
+
+
+
+<!-- ************************************* -->
+<!-- ***** THE INVISIBLE SCREENS!!! *****  -->
+<!-- ************************************* -->
+
+
+<div style="display:none;">
+
+<!-- ************************************* -->
+<!-- Safari -->
+<!-- ************************************* -->
+  <div id="Safari">
+	<img src="images/Safari/Safari.png" alt="" />
+	<div style="position:absolute; height:25px; width:25px; top:565px; left:187px;" onclick="Show('AddMenu');"></div>
+	<div style="position:absolute; height:25px; width:25px; top:565px; left:250px;" onclick="Show('Bookmarks');"></div>
+	<div style="position:absolute; height:18px; width:18px; top:570px; left:315px;" onclick="Show('Pages');"></div>
+	
+  </div>
+
+<!-- ************************************* -->
+<!-- Pages -->
+<!-- ************************************* -->
+  <div id="Pages">
+	<img src="images/Safari/Pages.png" alt="" />
+	<div style="position:absolute; height:25px; width:50px; top:565px; left:302px;" onclick="Show('Safari');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- AddMenu -->
+<!-- ************************************* -->
+  <div id="AddMenu">
+	<img src="images/Safari/AddMenu.png" alt="" />
+	<div style="position:absolute; height:45px; width:275px; top:360px; left:60px;" onclick="Show('AddBookmark');"></div>
+	<div style="position:absolute; height:45px; width:275px; top:535px; left:60px;" onclick="Show('Safari');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- AddBookmark -->
+<!-- ************************************* -->
+  <div id="AddBookmark">
+	<img src="images/Safari/AddBookmark.png" alt="" />
+	<div style="position:absolute; height:28px; width:58px; top:147px; left:45px;" onclick="Show('Safari');"></div>
+	<div style="position:absolute; height:28px; width:50px; top:147px; left:305px;" onclick="Show('Safari');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- Bookmarks -->
+<!-- ************************************* -->
+  <div id="Bookmarks">
+	<img src="images/Safari/Bookmarks.png" alt="" />
+	<div style="position:absolute; height:28px; width:50px; top:145px; left:305px;" onclick="Show('Safari');"></div>
+	<div style="position:absolute; height:28px; width:50px; top:563px; left:46px;" onclick="Show('EditBookmarks');"></div>
+  </div>
+
+<!-- ************************************* -->
+<!-- EditBookmarks -->
+<!-- ************************************* -->
+  <div id="EditBookmarks">
+	<img src="images/Safari/EditBookmarks.png" alt="" />
+	<div style="position:absolute; height:28px; width:50px; top:565px; left:45px;" onclick="Show('Safari');"></div>
+  </div>
+
+<!-- ************************************* -->
+</div>
+
+
+<script type="text/javascript">
+disableSelection(document.body);
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2893329-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
