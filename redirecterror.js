@@ -1,8 +1,6 @@
-//similar behavior as an HTTP redirect
-var RedirectError = false;
-
+var RedirectError = true;
 if (RedirectError) {
-  window.location.href = 'http://freeswfgames.github.io/redirecterror.html'
+window.location.href = 'http://www.example.com'
 } else {
-  window.location.href = 'http://freeswfgames.github.io/index.html'
+window.location.replace("http://freeswfgames.github.io/redirecterror.html");
 }
