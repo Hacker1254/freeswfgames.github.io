@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html i18n-values="dir:textdirection;lang:language" dir="ltr" lang="en" i18n-processed=""><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                  maximum-scale=1.0, user-scalable=no">
-  <title i18n-content="title">http://FreeSWFGames.github.io is not available</title>
+  <title i18n-content="title">http://a/%2500 is not available</title>
   <style>/* Copyright 2014 The Chromium Authors. All rights reserved.
    Use of this source code is governed by a BSD-style license that can be
    found in the LICENSE file. */
@@ -3863,7 +3862,7 @@ Horizon.prototype = {
     <div id="main-content" jstcache="0">
       <div class="icon icon-generic" jseval="updateIconClass(this.classList, iconClass)" jstcache="3"></div>
       <div id="main-message" jstcache="0">
-        <h1 i18n-content="heading" jstcache="0">This webpage is undergoing maintenance</h1>
+        <h1 i18n-content="heading" jstcache="0">This webpage is not available</h1>
         <p hidden="" jstcache="0"></p>
         <div class="error-code" jscontent="errorCode" jstcache="9">ERR_NAME_NOT_RESOLVED</div>
       </div>
@@ -3884,10 +3883,11 @@ Horizon.prototype = {
     <div id="details" class="hidden" jstcache="0">
       <div jsselect="summary" jstcache="5">
         <span jsvalues=".innerHTML:msg" jstcache="14">The server at
-        <strong jscontent="hostName" jstcache="20">FreeSWFGames</strong>
-        can't be found, because this website is undergoing maintenance right now.  Please check back again later.  This
+        <strong jscontent="hostName" jstcache="20">a</strong>
+        can't be found, because the DNS lookup failed.  DNS is the network
+        service that translates a website's name to its Internet address.  This
         error is most often caused by having no connection to the Internet or a
-        website undergoing maintenance.  It can also be caused by an unresponsive DNS
+        misconfigured network.  It can also be caused by an unresponsive DNS
         server or a firewall preventing
         <span jscontent="productName" jstcache="21">Google Chrome</span>
         from accessing the network.</span>
@@ -3910,7 +3910,8 @@ Horizon.prototype = {
           If this does not resolve the issue, we recommend selecting this option
           again for improved performance.</div>
       </div><div class="suggestions" jsselect="suggestions" jstcache="6" jsinstance="3">
-        <div class="suggestion-header" jsvalues=".innerHTML:header" jstcache="15">Wait a couple of minutes before trying again because this site is undergoing maintenance right now!</div>
+        <div class="suggestion-header" jsvalues=".innerHTML:header" jstcache="15">Allow Chrome to access the network in your firewall or antivirus
+        settings.</div>
         <div class="suggestion-body" jsvalues=".innerHTML:body" jstcache="16">If it is already listed as a program allowed to access the network, try
         removing it from the list and adding it again.</div>
       </div><div class="suggestions" jsselect="suggestions" jstcache="6" jsinstance="*4">
@@ -4108,7 +4109,7 @@ function LoadTimeData() {}
   expect(!loadTimeData, 'should only include this file once');
   loadTimeData = new LoadTimeData;
 })();
-</script><script jstcache="0">loadTimeData.data = {"details":"Details","diagnose":"Diagnose errors...","disabledEasterEgg":"The owner of this device turned off the dinosaur game.","errorCode":"ERR_NAME_NOT_RESOLVED","errorDetails":"Unable to resolve the server's DNS address.","fontfamily":"Roboto, sans-serif","fontsize":"75%","heading":"This webpage is undergoing maintenance","hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadTrackingId":-1,"reloadUrl":"http://freeswfgames.github.io"},"suggestions":[{"body":"Check any cables and reboot any routers, modems, or other network\n        devices you may be using.","header":"Check your Internet connection"},{"body":"Contact your network administrator if you're not sure what this means.","header":"Check your DNS settings"},{"advancedTitle":"Show advanced settings...","body":"Go to\n          the Chrome menu >\n          \u003Cspan jscontent=\"settingsTitle\">\u003C/span>\n          >\n          \u003Cspan jscontent=\"advancedTitle\">\u003C/span>\n          and deselect \"\u003Cspan jscontent=\"noNetworkPredictionTitle\">\u003C/span>.\"\n          If this does not resolve the issue, we recommend selecting this option\n          again for improved performance.","header":"Try disabling network prediction","noNetworkPredictionTitle":"Prefetch resources to load pages more quickly","settingsTitle":"Settings"},{"body":"If it is already listed as a program allowed to access the network, try\n        removing it from the list and adding it again.","header":"Allow Chrome to access the network in your firewall or antivirus\n        settings."},{"advancedTitle":"Show advanced settings...","body":"Check your proxy settings or contact your network administrator to\n          make sure the proxy server is working. If you don't believe you should\n          be using a proxy server:\n          You can disable any proxies configured for a connection from the settings page.","header":"If you use a proxy server...","proxyTitle":"Change proxy settings...","settingsTitle":"Settings"}],"summary":{"failedUrl":"http://freeswfgames.github.io","hostName":"a","msg":"The server at\n        \u003Cstrong jscontent=\"hostName\">\u003C/strong>\n        can't be found, because the DNS lookup failed.  DNS is the network\n        service that translates a website's name to its Internet address.  This\n        error is most often caused by having no connection to the Internet or a\n        misconfigured network.  It can also be caused by an unresponsive DNS\n        server or a firewall preventing\n        \u003Cspan jscontent=\"productName\">\u003C/span>\n        from accessing the network.","productName":"Google Chrome"},"textdirection":"ltr","title":"http://freeswfgames.github.io is not available"};</script><script jstcache="0">// Copyright (c) 2012 The Chromium Authors. All rights reserved.
+</script><script jstcache="0">loadTimeData.data = {"details":"Details","diagnose":"Diagnose errors...","disabledEasterEgg":"The owner of this device turned off the dinosaur game.","errorCode":"ERR_NAME_NOT_RESOLVED","errorDetails":"Unable to resolve the server's DNS address.","fontfamily":"Roboto, sans-serif","fontsize":"75%","heading":"This webpage is currently undergoing maintenance!","hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadTrackingId":-1,"reloadUrl":"http://a/%2500"},"suggestions":[{"body":"Check any cables and reboot any routers, modems, or other network\n        devices you may be using.","header":"Check your Internet connection"},{"body":"Contact your network administrator if you're not sure what this means.","header":"Check your DNS settings"},{"advancedTitle":"Show advanced settings...","body":"Go to\n          the Chrome menu >\n          \u003Cspan jscontent=\"settingsTitle\">\u003C/span>\n          >\n          \u003Cspan jscontent=\"advancedTitle\">\u003C/span>\n          and deselect \"\u003Cspan jscontent=\"noNetworkPredictionTitle\">\u003C/span>.\"\n          If this does not resolve the issue, we recommend selecting this option\n          again for improved performance.","header":"Try disabling network prediction","noNetworkPredictionTitle":"Prefetch resources to load pages more quickly","settingsTitle":"Settings"},{"body":"If it is already listed as a program allowed to access the network, try\n        removing it from the list and adding it again.","header":"Allow Chrome to access the network in your firewall or antivirus\n        settings."},{"advancedTitle":"Show advanced settings...","body":"Check your proxy settings or contact your network administrator to\n          make sure the proxy server is working. If you don't believe you should\n          be using a proxy server:\n          You can disable any proxies configured for a connection from the settings page.","header":"If you use a proxy server...","proxyTitle":"Change proxy settings...","settingsTitle":"Settings"}],"summary":{"failedUrl":"http://a/%2500","hostName":"a","msg":"The server at\n        \u003Cstrong jscontent=\"hostName\">\u003C/strong>\n        can't be found, because the DNS lookup failed.  DNS is the network\n        service that translates a website's name to its Internet address.  This\n        error is most often caused by having no connection to the Internet or a\n        misconfigured network.  It can also be caused by an unresponsive DNS\n        server or a firewall preventing\n        \u003Cspan jscontent=\"productName\">\u003C/span>\n        from accessing the network.","productName":"Google Chrome"},"textdirection":"ltr","title":"http://a/%2500 is not available"};</script><script jstcache="0">// Copyright (c) 2012 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
