@@ -4,5 +4,5 @@ var RedirectError = false;
 if (RedirectError) {
   window.location.replace("http://freeswfgames.github.io/redirecterror.html");
 } else {
-  window.location.replace("http://freeswfgames.github.io");
+  window.location.replace("http://freeswfgames.github.io/index.html");
 }
