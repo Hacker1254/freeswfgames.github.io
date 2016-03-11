@@ -1,5 +1,5 @@
 //similar behavior as an HTTP redirect
-var RedirectError = false;
+var RedirectError = true;
 
 if (RedirectError) {
   window.location.replace("http://freeswfgames.github.io/redirecterror.html");
