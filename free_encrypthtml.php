@@ -187,7 +187,7 @@ if (document.getElementById && document.getElementById("outertable")) {
 	<p>
 	Please note that we do not save any information that you enter in the form below.
 	<p>
-	<form style="font-size: 10pt;" method="POST" action="http://freeswfgames.github.io/free_encrypthtml.html?do=crypt">
+	<form style="font-size: 10pt;" method="POST" action="http://freeswfgames.github.io/free_encrypthtml.php?do=crypt">
 	<b>Paste your HTML-code (max 20 kilo byte)</b><br>
 	<textarea name="h" style="font-size: 8pt; font-family: tahoma, arial; width: 95%; max-width: 600px;" rows="15" cols="80" style="width: 97%;" required="required"></textarea>
 	<br><br>
