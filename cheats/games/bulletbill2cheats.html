@@ -1,3 +1,19 @@
+<html>
+  <head>
+    document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+</head>
+<body>
 <p>
 Levelcodes (almost correct)<br>
 ################################<br>
@@ -47,3 +63,5 @@ Levelcodes (almost correct)<br>
 <b>9P1WL</b> Flying Cowboy<br>
 <b>8E7UC</b> (GOD MODE)<br>
 </p>
+</body>
+</html>
