@@ -1,0 +1,25 @@
+<html>
+  <head>
+    document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+</head>
+<body>
+<p>
+"<strong>Q</strong>" to auto buy all buildings.
+"<strong>W</strong>" to auto click the cookies.
+"<strong>E</strong>" to disable auto click.
+"<strong>F</strong>" to change cookies.Enter amount of cookies,and it shall be submitted.
+"<strong>T</strong>" to change per second.Enter amount of per second,and it shall be submitted.
+</p>
+</body>
+</html>
