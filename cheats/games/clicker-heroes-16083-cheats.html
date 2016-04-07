@@ -1,1 +1,19 @@
+<html>
+  <head>
+    <script>
+    document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+</script>
+</head>
 <iframe src="https://www.itshax.com/Clicker-Heroes/" style="border:0px #FFFFFF none;" name="clicker heroes cheat tool" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="97%" width="100%"></iframe>
+</html>
