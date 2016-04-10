@@ -72,10 +72,15 @@
           <input type="email" class=" form-textbox validate[required, Email]" id="input_4" name="q4_email" size="30" value="" />
         </div>
       </li>
-      <li class="form-line form-line-column form-col-2" data-type="control_textarea" id="id_5">
-        <label class="form-label form-label-top" id="label_5" for="input_5"> Detailed Description (if game is an update, put changes made in here) * </label>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_textarea" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+          Detailed Description (if game is an update, put changes made in here)
+          <span class="form-required">
+            *
+          </span>
+        </label>
         <div id="cid_5" class="form-input-wide jf-required">
-          <textarea id="input_5" class="form-textarea" name="q5_detailedDescription" cols="40" rows="6"></textarea>
+          <textarea id="input_5" class="form-textarea validate[required]" name="q5_detailedDescription" cols="40" rows="6"></textarea>
         </div>
       </li>
       <li class="form-line form-line-column form-col-3" data-type="control_fileupload" id="id_7">
