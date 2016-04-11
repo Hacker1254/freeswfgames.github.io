@@ -184,6 +184,157 @@ rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0
 	}
 </style>
 <center><marquee class='marquee-code' direction='left' behavior='scrool' scrollamount='5'><html><head><b><font color="#009900"><script type="text/javascript">function startTime(){var date_format = '12';var today=new Date();var h=today.getHours();var m=today.getMinutes();var s=today.getSeconds();var mi=today.getMilliseconds();var year=today.getYear();if (year < 1000);year+=1900;var day=today.getDay();var month=today.getMonth();var daym=today.getDate();if (daym<10);daym=""+daym;var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");var result  = h;var ext     = '';if(date_format == '12'){if(h > 12){ext = 'PM';h = (h - 12);if(h < 10){result = "0" + h;}else if(h == 12){h = "00";ext = 'AM';}}else if(h < 12){result = ((h < 10) ? "0" + h : h);ext = 'AM';}else if(h == 12){ext = 'PM';}}if(m < 10){m = "" + m;}result = result + ":" + m + ' ' + ext;console.log(result);m=checkTime(m);s=checkTime(s);mi=checkTime(mi);d=checkTime(day);mo=checkTime(month);dt=checkTime(daym);document.getElementById('txt').innerHTML="Today is: &nbsp;" + dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + "&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" + h + " : "  + m + " : " + s + " : " + mi + "&nbsp;" + ext;t=setTimeout('startTime()',1);}function checkTime(i){if (i<10){i="0" + i;}return i;}</script><body onload="startTime()"><div id="txt"></div></font></b></body></head></html></marquee></center>
+    <script>
+    function highlightSearch() {
+    var text = document.getElementById("query").value;
+    var query = new RegExp("(\\b" + text + "\\b)", "gim");
+    var e = document.getElementById("searchtext").innerHTML;
+    var enew = e.replace(/(<span>|<\/span>)/igm, "");
+    document.getElementById("searchtext").innerHTML = enew;
+    var newe = enew.replace(query, "<span>$1</span>");
+    document.getElementById("searchtext").innerHTML = newe;
+
+}
+    </script>
+    <style>
+      #searchtext span{
+    background-color:#FF9;
+    color:#555;
+}
+
+div {
+    padding: 10px; 
+}
+         /* delete the "." before body to center all text */
+            .body
+            {
+				background: #f1f1f1;
+				text-align: center;
+            }    
+    
+	
+			#searchbox
+			{
+				background: #eaf8fc;
+				background-image: -moz-linear-gradient(#fff, #d4e8ec);
+				background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4e8ec),color-stop(1, #fff));
+				
+				-moz-border-radius: 35px;
+				border-radius: 35px;
+				
+				border-width: 1px;
+				border-style: solid;
+				border-color: #c4d9df #a4c3ca #83afb7;            
+				width: 480px;
+				height: 35px;
+				padding: 10px;
+				margin: 100px auto 50px;
+				overflow: hidden;
+			}
+        
+        .search, #submit
+        {
+            float: left;
+        }
+        
+        .search
+        {
+            padding: 5px 9px;
+            height: 35px;
+            width: 380px;
+            border: 1px solid #a4c3ca;
+            font: normal 13px 'trebuchet MS', arial, helvetica;
+            background: #f1f1f1;
+            
+            -moz-border-radius: 50px 3px 3px 50px;
+             border-radius: 50px 3px 3px 50px;
+             -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+             -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+        }
+		
+		/* ----------------------- */
+		
+		#submit
+		{		
+            background: #6cbb6b;
+            background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+            background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6cbb6b),color-stop(1, #95d788));
+            
+            -moz-border-radius: 3px 50px 50px 3px;
+            border-radius: 3px 50px 50px 3px;
+            
+            border-width: 1px;
+            border-style: solid;
+            border-color: #7eba7c #578e57 #447d43;
+            
+             -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+             -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+             box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;   		
+
+			height: 35px;
+			margin: 0 0 0 10px;
+			padding: 0;
+			width: 90px;
+			cursor: pointer;
+			font: bold 14px Arial, Helvetica;
+			color: #23441e;
+			
+			text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+		}
+		
+		#submit:hover
+		{		
+            background: #95d788;
+            background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+            background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+		}	
+
+		#submit:active
+		{		
+            background: #95d788;
+			outline: none;
+           
+             -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+             -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+		}
+
+		#submit::-moz-focus-inner
+		{
+		  border: none;
+		}		
+		
+		/* ----------------------- */
+        
+        .search::-webkit-input-placeholder {
+           color: #9c9c9c;
+           font-style: italic;
+        }
+        
+        .search:-moz-placeholder {
+           color: #9c9c9c;
+           font-style: italic;
+        }    
+        
+        .search.placeholder {
+           color: #9c9c9c !important;
+           font-style: italic;
+        }  
+        
+        .search:focus
+        {
+            border-color: #8badb4;
+            background: #fff;
+            outline: none;
+        }	
+    </style>
+    <div>
+<form action="" method="" id="searchbox" name="search">
+<input name="query" class="search" id="query" type="text" placeholder="Search Game Here">
+<input name="searchit" type="button" value="Search" id="submit" onClick="highlightSearch()">
+</form></div>
+<div id="searchtext">
 <ul>
 <li><a name="1" href="http://freeswfgames.github.io/swfs/1on1soccer.html" style="text-decoration: none">1 on 1 soccer</a></li>
 <li><a name="2" href="http://freeswfgames.github.io/swfs/10bullets.html" style="text-decoration: none">10 Bullets</a></li>
@@ -247,6 +398,7 @@ rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0
 <li><a name="60" href="http://freeswfgames.github.io/swfs/worldshardestgame.html" style="text-decoration: none">Worlds Hardest Game</a></li>
 <li><a name="61" href="http://freeswfgames.github.io/swfs/worldshardestgame2.html" style="text-decoration: none">Worlds Hardest Game 2</a></li>
 </ul>
+</div>
 </body>
 </html>
 <br>
