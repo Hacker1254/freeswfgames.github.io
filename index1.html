@@ -332,9 +332,10 @@ div {
     });
     </script>
 <form action method id="searchbox" name="search">
-<input name="query" class="search" id="query" type="text" placeholder="Search Game Here">
+<input name="query" class="search" id="query" type="text" placeholder="Search Game Here" onkeydown="if (event.keyCode == 13) { highlightSearch(); return false; }">
 <input name="searchit" type="button" value="Search" id="submit" onClick="highlightSearch()">
-</form></div>
+</form>
+</div>
 <div id="searchtext">
 
   
