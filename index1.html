@@ -68,7 +68,7 @@
         var c = e.which || e.keyCode;//Get key code
         switch (c) {
             case 73://Block Ctrl+S
-                e.preventDefault();     
+                e.preventDefault();
                 e.stopPropagation();
             break;
         }
@@ -332,7 +332,7 @@ div {
     });
     </script>
 <form action method id="searchbox" name="search">
-<input name="query" class="search" id="query" type="text" placeholder="Search Game" onkeydown="if (event.keyCode == 13) { highlightSearch(); return false; }">
+<input name="query" class="search" id="query" type="text" placeholder="Search Game" onkeydown="if (event.keyCode == 13) { highlightSearch(); return false; }" autofill="false">
 <input name="searchit" type="button" value="Search" id="submit" onClick="highlightSearch()">
 </form>
 </div>
