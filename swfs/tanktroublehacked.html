@@ -1,0 +1,127 @@
+<div class="GamePanel">
+<div class="GamePanelInner" style="width: 712px; height: 490px;">
+<div class="GamePlayContainer">
+<div id="GameContainer" style="width: 712px; height: 490px;"><div id="GoogleAdPreloader" style="display: none;"><div class="GoogleAdPreloaderMessage" style="width: 712px; height: 30px;">Your game will appear after this advertisement.</div>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="712px" height="460px" id="GoogleAdPreloaderIMA" align="middle">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreen" value="false">
+<param name="movie" value="http://www.hackedonlinegames.com/plugins/GoogleAdPreloader/ima3_preloader_1.5.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#000000">
+<param name="flashvars" value="adTagUrl=http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fclient%3Dca-games-pub-1232265399417302%26slotname%3D3936553765%26ad_type%3Dvideo%26description_url%3Dhttp%253A%252F%252FHackedonlinegames.com%26max_ad_duration%3D60000%26sdmax%3D60000%26videoad_start_delay%3D0%26hl%3Den">
+<embed src="http://www.hackedonlinegames.com/plugins/GoogleAdPreloader/ima3_preloader_1.5.swf" quality="high" bgcolor="#000000" width="712px" height="460px" name="GoogleAdPreloaderIMA" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" flashvars="adTagUrl=http%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fclient%3Dca-games-pub-1232265399417302%26slotname%3D3936553765%26ad_type%3Dvideo%26description_url%3Dhttp%253A%252F%252FHackedonlinegames.com%26max_ad_duration%3D60000%26sdmax%3D60000%26videoad_start_delay%3D0%26hl%3Den" pluginspage="http://www.adobe.com/go/getflashplayer">
+</object>
+</div><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="712" height="490" id="GameSwfObject">
+                        <param name="movie" value="swf/tanktroublehacked.swf?version=1">
+                        <param name="quality" value="high">
+                        
+                        <param name="allowFullScreen" value="false">
+                        <param name="allowFullScreenInteractive" value="false">
+                        <param name="allowScriptAccess" value="sameDomain">
+                        
+                        <embed src="swf/tanktroublehacked.swf?version=1" quality="high" width="712" height="490" id="GameSwfEmbed" name="GameSwf" allowfullscreen="false" allowfullscreeninteractive="false" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer">
+                     </object></div>
+<div id="PlayOverlay" style="width: 712px; height: 490px; display: none;">
+</div>
+</div>
+</div>
+<script type="text/javascript"><!--
+			jQuery(function($) {
+            var detectWebGL = function () {
+               var support = (function () {
+                  try {
+                     var canvas = document.createElement('canvas');
+                     return !!window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+                  } catch (e) {
+                     return false;
+                  }
+               })();
+
+               if (!support) {
+                  try {
+                     _gaq.push(['_trackEvent', 'Missing Software', 'WebGL']);
+                  } catch (e) { }
+
+                  var obj = $('#GameContainer');
+                  obj.html('<div style="width: 400px; margin: auto; position: relative; top: 50%;">' +
+                     '<div style="display: block; height: 140px; position: relative; top: -70px; background: #000; color: #fff; font-size: 18px;">' +
+                     '<div style="text-align: center;">' +
+                     'Your browser does not seem to support WebGL.' +
+                     '<br><br>' +
+                     'For the optimal experience, please play using <a href=\"https://www.google.com/chrome/browser/desktop/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Chrome</b></a>, <a href=\"https://www.mozilla.org/en-US/firefox/new/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Firefox</b></a> or <a href=\"http://browser.yandex.com/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Yandex Browser</b></a>.' +
+                     '</div>' +
+                     '</div>' +
+                     '</div>');
+
+                  return false;
+               }
+
+               return true;
+            }
+
+
+				jQuery(document).ready(function($) {
+
+					$('#PlayOverlay').hide();
+   				var gc = $('#GameContainer');
+
+   				var gameName = 'Tank Trouble';
+					try {
+   					_gaq.push(['_trackEvent', 'Game', 'Play', gameName]);
+					} catch (e) { }
+
+					gc.width(712);
+					gc.height(490);
+
+               if (swfobject.hasFlashPlayerVersion("10.0.0")) {
+
+                  if (navigator.userAgent.match(/Android.+Mobile/) || navigator.userAgent.match(/RIM Tablet OS/) || navigator.userAgent.match(/BB10.+Mobile/)) {
+                     //swfOptions["menu"] = false;
+                     //swfOptions["allowFullScreen"] = true;
+                     //swfOptions["fullScreenOnSelection"] = true;
+                  }
+
+                  function launch() {
+                     
+                     $("#GameSwfObject").replaceWith("<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\n                     codebase=\"http:\/\/download.macromedia.com\/pub\/shockwave\/cabs\/flash\/swflash.cab#version=10,0,0,0\"\n                     width=\"712\" height=\"490\" id=\"GameSwfObject\">\n                        <param name=\"movie\" value=\"swf\/tanktroublehacked.swf?version=1\" \/>\n                        <param name=\"quality\" value=\"high\" \/>\n                        \n                        <param name=\"allowFullScreen\" value=\"false\" \/>\n                        <param name=\"allowFullScreenInteractive\" value=\"false\" \/>\n                        <param name=\"allowScriptAccess\" value=\"sameDomain\" \/>\n                        \n                        <embed src=\"swf\/tanktroublehacked.swf?version=1\"\n                           quality=\"high\"\n                           width=\"712\"\n                           height=\"490\"\n                           id=\"GameSwfEmbed\"\n                           name=\"GameSwf\"\n                           \n                           allowFullScreen=\"false\"\n                           allowFullScreenInteractive=\"false\"\n                           allowScriptAccess=\"sameDomain\"\n                           \n                           type=\"application\/x-shockwave-flash\"\n                           pluginspage=\"http:\/\/www.adobe.com\/go\/getflashplayer\"><\/embed>\n                     <\/object>");
+                  };
+
+
+                  
+         
+         var googleAdRemoved = false;
+         window.removeAdSwf = window.noAdsReturned = function() {
+            
+            document.getElementById("GoogleAdPreloader").style.display = "none";
+            if (googleAdRemoved) {
+               return;
+            }
+            googleAdRemoved = true;
+            
+            launch();
+         };
+
+               } else {
+                  gc.append('<'+'a href="http://get.adobe.com/flashplayer/" target="_blank" class="InstallFlashPlayer" style="width: '+gc.width()+'px; height: '+gc.height()+'px;" title="Install Required Software"'+'>'+'<'+'/a>');
+
+						try {
+   						_gaq.push(['_trackEvent', 'Missing Software', 'Flash Player']);
+						} catch (e) { }
+               }
+					(function() {
+						$.ajax({
+							url: '/game/markview/2107',
+							dataType: 'json',
+							success: function(json) {
+								if (json.CountPlays) {
+									$('#CountPlays').numberFormat(parseInt(json.CountPlays));
+								}
+							}
+						});
+					})();
+				});
+			});
+		// --></script>
+<div class="GamePanelCheatDescription">
+<b class="Cheat">Cheat:</b> Keyhack <span style="background: #333; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; color: #fff; padding: 0px 5px 0px; font-weight: bold;">1</span> toggle Player 1 unlimited health, <span style="background: #333; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; color: #fff; padding: 0px 5px 0px; font-weight: bold;">2</span> to toggle Player 1 (and CPU) unlimited health, <span style="background: #333; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; color: #fff; padding: 0px 5px 0px; font-weight: bold;">3</span> to toggle Player 3 unlimited health. </div>
+</div>
