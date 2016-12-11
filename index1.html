@@ -1,6 +1,42 @@
 <html>
     <head>
 		<title>FreeSWFGames</title>
+	    <script type="text/javascript">
+				$(function() {
+    $.fn.sortList = function() {
+    var mylist = $(this);
+    var listitems = $('li', mylist).get();
+    listitems.sort(function(a, b) {
+        var compA = $(a).text().toUpperCase();
+        var compB = $(b).text().toUpperCase();
+        return (compA < compB) ? -1 : 1;
+    });
+    $.each(listitems, function(i, itm) {
+        mylist.append(itm);
+    });
+   }
+
+    $("ul#orderlist").sortList();
+
+});
+$(function() {
+    $.fn.sortList = function() {
+    var mylist = $(this);
+    var listitems = $('option', mylist).get();
+    listitems.sort(function(a, b) {
+        var compA = $(a).text().toUpperCase();
+        var compB = $(b).text().toUpperCase();
+        return (compA < compB) ? -1 : 1;
+    });
+    $.each(listitems, function(i, itm) {
+        mylist.append(itm);
+    });
+   }
+
+    $("select#orderlist").sortList();
+
+});
+	    </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ec1760bf4ad218"></script>
             <div id="topbar">
@@ -90,7 +126,7 @@ rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0
 <div class="jumps">
 <form name="jumpto" action>
 <div>
-<select name="subcat" onchange="location.href=jumpto.subcat.options[selectedIndex].value; selectedIndex=0;">
+<select id="orderlist" name="subcat" onchange="location.href=jumpto.subcat.options[selectedIndex].value; selectedIndex=0;">
   <option value="#" selected="selected">Select a Game</option>
   <option value="#1">1 on 1 soccer</option>
   <option value="#2">10 Bullets</option>
@@ -358,7 +394,7 @@ div {
 </style>
 <center><marquee class='marquee-code' direction='left' behavior='scrool' scrollamount='5'><html><head><b><font color="#009900"><script type="text/javascript">function startTime(){var date_format = '12';var today=new Date();var h=today.getHours();var m=today.getMinutes();var s=today.getSeconds();var mi=today.getMilliseconds();var year=today.getYear();if (year < 1000);year+=1900;var day=today.getDay();var month=today.getMonth();var daym=today.getDate();if (daym<10);daym=""+daym;var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");var result  = h;var ext     = '';if(date_format == '12'){if(h > 12){ext = 'PM';h = (h - 12);if(h < 10){result = "0" + h;}else if(h == 12){h = "00";ext = 'AM';}}else if(h < 12){result = ((h < 10) ? "0" + h : h);ext = 'AM';}else if(h == 12){ext = 'PM';}}if(m < 10){m = "" + m;}result = result + ":" + m + ' ' + ext;console.log(result);m=checkTime(m);s=checkTime(s);mi=checkTime(mi);d=checkTime(day);mo=checkTime(month);dt=checkTime(daym);document.getElementById('txt').innerHTML="Today is: &nbsp;" + dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + "&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" + h + " : "  + m + " : " + s + " : " + mi + "&nbsp;" + ext;t=setTimeout('startTime()',1);}function checkTime(i){if (i<10){i="0" + i;}return i;}</script><body onload="startTime()"><div id="txt"></div></font></b></marquee></center>
 
-<ul>
+<ul id="orderlist">
 <li><a name="1" href="/swfs/1on1soccer.html" style="text-decoration: none;">1 on 1 soccer</a></li>
 <li><a name="2" href="/swfs/10bullets.html" style="text-decoration: none;">10 Bullets</a></li>
 <li><a name="3" href="/swfs/10morebullets.html" style="text-decoration:none;">10 More Bullets</a></li>
